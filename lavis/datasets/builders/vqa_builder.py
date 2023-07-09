@@ -43,7 +43,6 @@ class COCOVQABuilder(VQABuilder):
     DATASET_CONFIG_DICT = {
         "default": "configs/datasets/coco/defaults_vqa.yaml",
         "eval": "configs/datasets/coco/eval_vqa.yaml",
-        "train100": "configs/datasets/coco/eval_vqa_train100.yaml",
         "train200": "configs/datasets/coco/eval_vqa_train200.yaml",
         "train2000": "configs/datasets/coco/eval_vqa_train2000.yaml",
         "val4000": "configs/datasets/coco/eval_vqa_val4000.yaml"
