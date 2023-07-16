@@ -1,6 +1,6 @@
 # Modular Visual Question Answering via Code Generation
 
-This repo contains the code for the paper Modular Visual Question Answering via Code Generation, published at ACL 2023.
+This repo contains the code for the paper [Modular Visual Question Answering via Code Generation](https://arxiv.org/abs/2306.05392), published at ACL 2023.
 
 # Setup
 Follow these steps to set up an environment to run this code. First, create a fresh conda environment based on Python 3.8. Then
