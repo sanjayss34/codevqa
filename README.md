@@ -16,8 +16,10 @@ bash run_scripts/pnp-vqa/eval/gqa_eval_gpt3.sh
 bash run_scripts/pnp-vqa/eval/covr_eval_gpt3.sh
 bash run_scripts/pnp-vqa/eval/nlvr2_eval_gpt3.sh
 bash run_scripts/pnp-vqa/eval/vqav2_eval_gpt3.sh
+bash run_scripts/pnp-vqa/eval/okvqa_eval_gpt3.sh
 ```
-The config files are stored at `lavis/projects/pnp-vqa/eval/{gqa/covr/nlvr2}_eval_gpt3{_codevqa}.yaml`. We provide a few commented-out options for (1) if you want to evaluate on the validation set (or sample thereof) instead of the test set, (2) randomly retrieving in-context examples instead of using question embeddings, and (3) using the `find_object` primitive for counting objects (for this, provided in the COVR and NLVR2 configs, use both the commented-out option for the `programs_path` and the commented-out `grounding_dino_path`).
+The config files are stored at `lavis/projects/pnp-vqa/eval/{gqa/covr/nlvr2/vqav2/okvqa}_eval_gpt3{_codevqa}.yaml`. We provide a few commented-out options for (1) if you want to evaluate on the validation set (or sample thereof) instead of the test set, (2) randomly retrieving in-context examples instead of using question embeddings, and (3) using the `find_object` primitive for counting objects (for this, provided in the COVR and NLVR2 configs, use both the commented-out option for the `programs_path` and the commented-out `grounding_dino_path`).
+Note: The preambles (API documentation) in the prompts for VQAv2 and OK-VQA may be suboptimal due to either misspecified functions (OK-VQA) or lack of function descriptions (VQAv2). The in-context examples, however, are valid.
 
 # Acknowledgements
 This repo is based on the original LAVIS repo: https://github.com/salesforce/LAVIS .
